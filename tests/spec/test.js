@@ -37,4 +37,16 @@ describe('toUint24', function () {
   it('-1 is the maximum value 16777215', function () {
     expect(toUint24(-1)).toBe(16777215);
   });
+
+  it('NaN should be 0', function () {
+    expect(toUint24(Infinity)).toBe(0);
+  });
+
+  it('Infinity should be 0', function () {
+    expect(toUint24(Infinity)).toBe(0);
+  });
+
+  it('-Infinity should be 0', function () {
+    expect(toUint24(-Infinity)).toBe(0);
+  });
 });

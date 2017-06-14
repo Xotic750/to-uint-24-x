@@ -36,10 +36,21 @@
 'use strict';
 
 var modulo = require('modulo-x');
-var toInteger = require('to-integer-x');
+var sign = require('math-sign-x');
+var numberIsFinite = require('is-finite-x');
 
 var toUint24 = function _toUint24(argument) {
-  return modulo(toInteger(argument), 0x1000000);
+  // Let number be ? ToNumber(argument).
+  var number = Number(argument);
+  // If number is NaN, +0, -0, +∞, or -∞, return +0.
+  if (number !== number || number === 0 || !numberIsFinite(number)) {
+    return 0;
+  }
+  // Let int be the mathematical value that is the same sign as number and
+  // whose magnitude is floor(abs(number)).
+  var integer = sign(number) * Math.floor(Math.abs(number));
+  // Let int24bit be int modulo 2^24.
+  return modulo(integer, 0x1000000);
 };
 
 /**
