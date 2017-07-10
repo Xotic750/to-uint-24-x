@@ -1,32 +1,6 @@
 /**
- * @file
- * <a href="https://travis-ci.org/Xotic750/to-uint-24-x"
- * title="Travis status">
- * <img
- * src="https://travis-ci.org/Xotic750/to-uint-24-x.svg?branch=master"
- * alt="Travis status" height="18">
- * </a>
- * <a href="https://david-dm.org/Xotic750/to-uint-24-x"
- * title="Dependency status">
- * <img src="https://david-dm.org/Xotic750/to-uint-24-x.svg"
- * alt="Dependency status" height="18"/>
- * </a>
- * <a
- * href="https://david-dm.org/Xotic750/to-uint-24-x#info=devDependencies"
- * title="devDependency status">
- * <img src="https://david-dm.org/Xotic750/to-uint-24-x/dev-status.svg"
- * alt="devDependency status" height="18"/>
- * </a>
- * <a href="https://badge.fury.io/js/to-uint-24-x" title="npm version">
- * <img src="https://badge.fury.io/js/to-uint-24-x.svg"
- * alt="npm version" height="18">
- * </a>
- *
- * Converts a value to Uint24 module.
- *
- * Requires ES3 or above.
- *
- * @version 1.0.0
+ * @file Converts a value to Uint24.
+ * @version 1.1.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -54,7 +28,7 @@ var toUint24 = function _toUint24(argument) {
 };
 
 /**
- * The abstract operation ToUint16 converts argument to one of 2^24 integer
+ * The abstract operation ToUint24 converts argument to one of 2^24 integer
  * values in the range 0 through 2^24-1, inclusive.
  *
  * @param {number} argument The argument to convert to one of 2^24 integers.
