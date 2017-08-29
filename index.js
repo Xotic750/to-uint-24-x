@@ -1,6 +1,6 @@
 /**
  * @file Converts a value to Uint24.
- * @version 1.1.0
+ * @version 2.0.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -9,13 +9,14 @@
 
 'use strict';
 
+var toNumber = require('to-number-x');
 var modulo = require('modulo-x');
 var sign = require('math-sign-x');
 var numberIsFinite = require('is-finite-x');
 
-var toUint24 = function _toUint24(argument) {
+var $toUint24 = function toUint24(argument) {
   // Let number be ? ToNumber(argument).
-  var number = Number(argument);
+  var number = toNumber(argument);
   // If number is NaN, +0, -0, +∞, or -∞, return +0.
   if (number !== number || number === 0 || !numberIsFinite(number)) {
     return 0;
@@ -38,4 +39,4 @@ var toUint24 = function _toUint24(argument) {
  * toUint24(1); // 1
  * toUint24(-1); // 16777215 (2^24-1)
  */
-module.exports = toUint24;
+module.exports = $toUint24;
