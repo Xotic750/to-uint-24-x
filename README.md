@@ -23,17 +23,17 @@
 ## to-uint-24-x
 Converts a value to Uint24.
 
-**Version**: 2.0.0  
+**Version**: 2.0.1  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
 <a name="exp_module_to-uint-24-x--module.exports"></a>
 
-### `module.exports` ⇒ <code>number</code> ⏏
+### `module.exports(argument)` ⇒ <code>number</code> ⏏
 The abstract operation ToUint24 converts argument to one of 2^24 integer
 values in the range 0 through 2^24-1, inclusive.
 
-**Kind**: Exported member  
+**Kind**: Exported function  
 **Returns**: <code>number</code> - Integer value, 0 through 2^24-1, inclusive.  
 
 | Param | Type | Description |

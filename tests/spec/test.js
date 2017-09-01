@@ -39,7 +39,7 @@ describe('toUint24', function () {
   });
 
   it('NaN should be 0', function () {
-    expect(toUint24(Infinity)).toBe(0);
+    expect(toUint24(NaN)).toBe(0);
   });
 
   it('Infinity should be 0', function () {
