@@ -1,6 +1,6 @@
 /**
  * @file Converts a value to Uint24.
- * @version 2.1.0
+ * @version 3.0.0
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -9,9 +9,9 @@
 
 'use strict';
 
-var toNumber = require('to-number-x');
+var toNumber = require('to-number-x').toNumber2018;
 var modulo = require('modulo-x');
-var sign = require('math-sign-x');
+var sign = require('math-sign-x').sign2018;
 var numberIsFinite = require('is-finite-x');
 
 /**
