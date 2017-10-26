@@ -1,6 +1,6 @@
 /**
  * @file Converts a value to Uint24.
- * @version 3.0.0
+ * @version 3.0.1
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -13,6 +13,8 @@ var toNumber = require('to-number-x').toNumber2018;
 var modulo = require('modulo-x');
 var sign = require('math-sign-x').sign2018;
 var numberIsFinite = require('is-finite-x');
+var floor = Math.floor;
+var abs = Math.abs;
 
 /**
  * The abstract operation ToUint24 converts argument to one of 2^24 integer
@@ -37,5 +39,5 @@ module.exports = function toUint24(argument) {
   // Let int be the mathematical value that is the same sign as number and
   // whose magnitude is floor(abs(number)).
   // Let int24bit be int modulo 2^24.
-  return modulo(sign(number) * Math.floor(Math.abs(number)), 0x1000000);
+  return modulo(sign(number) * floor(abs(number)), 0x1000000);
 };
