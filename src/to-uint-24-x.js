@@ -7,14 +7,13 @@
  * @module to-uint-24-x
  */
 
-'use strict';
+const toNumber = require('to-number-x').toNumber2018;
+const modulo = require('modulo-x');
+const sign = require('math-sign-x').sign2018;
+const numberIsFinite = require('is-finite-x');
 
-var toNumber = require('to-number-x').toNumber2018;
-var modulo = require('modulo-x');
-var sign = require('math-sign-x').sign2018;
-var numberIsFinite = require('is-finite-x');
-var floor = Math.floor;
-var abs = Math.abs;
+const {floor} = Math;
+const {abs} = Math;
 
 /**
  * The abstract operation ToUint24 converts argument to one of 2^24 integer
@@ -29,7 +28,7 @@ var abs = Math.abs;
  */
 module.exports = function toUint24(argument) {
   // Let number be ? ToNumber(argument).
-  var number = toNumber(argument);
+  const number = toNumber(argument);
 
   // If number is NaN, +0, -0, +∞, or -∞, return +0.
   if (number === 0 || numberIsFinite(number) === false) {
