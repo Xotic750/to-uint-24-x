@@ -49,7 +49,7 @@
   },
   "dependencies": {
     "is-finite-x": "^4.0.4",
-    "math-sign-x": "^4.0.0",
+    "math-sign-x": "^4.0.1",
     "modulo-x": "^2.0.1",
     "to-number-x": "^3.0.5"
   },
