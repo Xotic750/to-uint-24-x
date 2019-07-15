@@ -21,28 +21,27 @@
 <a name="module_to-uint-24-x"></a>
 
 ## to-uint-24-x
+
 Converts a value to Uint24.
 
-**Version**: 3.0.1  
-**Author**: Xotic750 <Xotic750@gmail.com>  
-**License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
-**Copyright**: Xotic750  
 <a name="exp_module_to-uint-24-x--module.exports"></a>
 
 ### `module.exports(argument)` ⇒ <code>number</code> ⏏
+
 The abstract operation ToUint24 converts argument to one of 2^24 integer
 values in the range 0 through 2^24-1, inclusive.
 
 **Kind**: Exported function  
-**Returns**: <code>number</code> - Integer value, 0 through 2^24-1, inclusive.  
+**Returns**: <code>number</code> - Integer value, 0 through 2^24-1, inclusive.
 
-| Param | Type | Description |
-| --- | --- | --- |
+| Param    | Type                | Description                                      |
+| -------- | ------------------- | ------------------------------------------------ |
 | argument | <code>number</code> | The argument to convert to one of 2^24 integers. |
 
-**Example**  
+**Example**
+
 ```js
-var toUint24 = require('to-uint-24-x');
-toUint24(1); // 1
-toUint24(-1); // 16777215 (2^24-1)
+import toUint24 from 'to-uint-24-x';
+console.log(toUint24(1)); // 1
+console.log(toUint24(-1)); // 16777215 (2^24-1)
 ```
