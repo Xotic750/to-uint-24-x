@@ -12,7 +12,7 @@ const {floor, abs} = Math;
  * @param {number} argument - The argument to convert to one of 2^24 integers.
  * @returns {number} Integer value, 0 through 2^24-1, inclusive.
  */
-export default function toUint24(argument) {
+const toUint24 = function toUint24(argument) {
   // Let number be ? ToNumber(argument).
   const number = toNumber(argument);
 
@@ -25,4 +25,6 @@ export default function toUint24(argument) {
   // whose magnitude is floor(abs(number)).
   // Let int24bit be int modulo 2^24.
   return modulo(sign(number) * floor(abs(number)), 0x1000000);
-}
+};
+
+export default toUint24;

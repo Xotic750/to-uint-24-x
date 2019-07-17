@@ -12,7 +12,7 @@ var floor = Math.floor,
  * @returns {number} Integer value, 0 through 2^24-1, inclusive.
  */
 
-export default function toUint24(argument) {
+var toUint24 = function toUint24(argument) {
   // Let number be ? ToNumber(argument).
   var number = toNumber(argument); // If number is NaN, +0, -0, +∞, or -∞, return +0.
 
@@ -24,6 +24,8 @@ export default function toUint24(argument) {
 
 
   return modulo(sign(number) * floor(abs(number)), 0x1000000);
-}
+};
+
+export default toUint24;
 
 //# sourceMappingURL=to-uint-24-x.esm.js.map
