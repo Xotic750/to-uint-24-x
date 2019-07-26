@@ -1,10 +1,12 @@
-<a href="https://travis-ci.org/Xotic750/to-uint-24-x"
+<a
+  href="https://travis-ci.org/Xotic750/to-uint-24-x"
   title="Travis status">
 <img
   src="https://travis-ci.org/Xotic750/to-uint-24-x.svg?branch=master"
   alt="Travis status" height="18">
 </a>
-<a href="https://david-dm.org/Xotic750/to-uint-24-x"
+<a
+  href="https://david-dm.org/Xotic750/to-uint-24-x"
   title="Dependency status">
 <img src="https://david-dm.org/Xotic750/to-uint-24-x/status.svg"
   alt="Dependency status" height="18"/>
@@ -15,15 +17,23 @@
 <img src="https://david-dm.org/Xotic750/to-uint-24-x/dev-status.svg"
   alt="devDependency status" height="18"/>
 </a>
-<a href="https://badge.fury.io/js/to-uint-24-x"
+<a
+  href="https://badge.fury.io/js/to-uint-24-x"
   title="npm version">
 <img src="https://badge.fury.io/js/to-uint-24-x.svg"
   alt="npm version" height="18">
 </a>
-<a href="https://www.jsdelivr.com/package/npm/to-uint-24-x"
+<a
+  href="https://www.jsdelivr.com/package/npm/to-uint-24-x"
   title="jsDelivr hits">
 <img src="https://data.jsdelivr.com/v1/package/npm/to-uint-24-x/badge?style=rounded"
   alt="jsDelivr hits" height="18">
+</a>
+<a
+  href="https://bettercodehub.com/results/Xotic750/to-uint-24-x"
+  title="bettercodehub score">
+<img src="https://bettercodehub.com/edge/badge/Xotic750/to-uint-24-x?branch=master"
+  alt="bettercodehub score" height="18">
 </a>
 
 <a name="module_to-uint-24-x"></a>
