@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-07-27T14:45:29.634Z",
+  "date": "2019-07-27T21:50:52.487Z",
   "describe": "",
   "description": "Converts a value to Uint24.",
   "file": "to-uint-24-x.js",
