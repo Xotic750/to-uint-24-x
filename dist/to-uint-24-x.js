@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-08-12T22:28:34.607Z",
+  "date": "2019-08-13T06:14:10.465Z",
   "describe": "",
   "description": "Converts a value to Uint24.",
   "file": "to-uint-24-x.js",
-  "hash": "9fd299c4eb3a8fe1e6a4",
+  "hash": "9b58675c0b4fd17c77ad",
   "license": "MIT",
   "version": "4.0.17"
 }
@@ -23,19 +23,34 @@
 })((function () {
   'use strict';
 
-  if (typeof self !== 'undefined') {
-    return self;
-  }
+  /* eslint-disable-next-line no-var */
+  var magic;
 
-  if (typeof window !== 'undefined') {
+  try {
+    /* eslint-disable-next-line no-extend-native */
+    Object.defineProperty(Object.prototype, '__magic__', {
+      /* eslint-disable-next-line object-shorthand */
+      get: function() {
+        return this;
+      },
+      /* eslint-disable-next-line prettier/prettier */
+      configurable: true
+    });
+
+    if (typeof __magic__ === 'undefined') {
+      magic = typeof self === 'undefined' ? window : self;
+    } else {
+      /* eslint-disable-next-line no-undef */
+      magic = __magic__;
+    }
+
+    /* eslint-disable-next-line no-underscore-dangle,no-use-extend-native/no-use-extend-native */
+    delete Object.prototype.__magic__;
+
+    return magic;
+  } catch (error) {
     return window;
   }
-
-  if (typeof global !== 'undefined') {
-    return global;
-  }
-
-  return Function('return this')();
 }()), function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
