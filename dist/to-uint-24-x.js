@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2017",
-  "date": "2019-08-28T15:38:15.934Z",
+  "date": "2019-08-28T17:38:10.157Z",
   "describe": "",
   "description": "Converts a value to Uint24.",
   "file": "to-uint-24-x.js",
   "hash": "fc982b0ceb9a53be505f",
   "license": "MIT",
-  "version": "4.1.1"
+  "version": "4.1.2"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
